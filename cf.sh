@@ -7,7 +7,7 @@ echo "Checking VPS"
 
 apt install jq curl -y
 DOMAIN=rocknetvpn.my.id
-sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
+sub=$(</dev/urandom tr -dc a-z0-9 | head -c3)
 SUB_DOMAIN=${sub}.rocknetvpn.my.id
 CF_ID=nurkholis.best@gmail.com
 CF_KEY=99a77f92b15f647eea68e59b143fe8f78e26a
