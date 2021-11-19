@@ -16,6 +16,7 @@ if [ -f "/etc/v2ray/domain" ]; then
 echo "Script Already Installed"
 exit 0
 fi
+touch /etc/list-akun && chmod +x /etc/list-akun
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 wget https://raw.githubusercontent.com/rockneters/gerandong/main/cf.sh && chmod +x cf.sh && ./cf.sh
