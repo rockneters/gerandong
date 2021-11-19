@@ -6,7 +6,7 @@ MYIP=$(wget -qO- ifconfig.me/ip);
 echo "Checking VPS"
 
 apt install jq curl -y
-DOMAIN=ajunvpn.group
+DOMAIN=rocknetvpn.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 SUB_DOMAIN=${sub}.rocknetvpn.my.id
 CF_ID=nurkholis.best@gmail.com
