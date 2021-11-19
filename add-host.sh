@@ -12,6 +12,6 @@ fi
 cat > /etc/v2ray/domain << END
 $domainbaru
 END
-cert
+certv2ray
 clear 
 echo "SUCCESS"
