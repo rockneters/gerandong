@@ -8,9 +8,9 @@ echo "Checking VPS"
 apt install jq curl -y
 DOMAIN=ajunvpn.group
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.ajunvpn.group
-CF_ID=bacank.septiawan3@gmail.com
-CF_KEY=c6c16fe728bf8935378e7b27d65a54e0ec0d9
+SUB_DOMAIN=${sub}.rocknetvpn.my.id
+CF_ID=nurkholis.best@gmail.com
+CF_KEY=99a77f92b15f647eea68e59b143fe8f78e26a
 set -euo pipefail
 IP=$(wget -qO- ifconfig.me/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
