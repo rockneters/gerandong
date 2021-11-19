@@ -3,12 +3,11 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
+domain="$(cat /etc/v2ray/domain)"
 echo "Checking VPS"
 clear
 echo start
 sleep 0.5
-source /var/lib/premium-script/ipvps.conf
-domain=$IP
 systemctl stop v2ray
 systemctl stop v2ray@none
 /root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
